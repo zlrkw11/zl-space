@@ -9,3 +9,17 @@ creating a stateless functional component
 this styles will be applied on all components inside the browser.
 
 However, we can use CSS modules to scope into only a single component.
+
+```
+main.jsx
+```
+
+renders the <App/>, so apply index.css here.
+
+```
+* {
+
+}
+```
+
+applies to everything
