@@ -95,3 +95,11 @@ inner pair: property:value pairs for an object
 ```
 
 \*in Jsx(javascript), we use camelCase instead of -.
+
+## Click Events
+
+pass reference, not the invoked version. Otherwise it will be called straight away.
+
+```
+{handleClick}
+```
