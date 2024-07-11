@@ -68,5 +68,6 @@ however, for built-in attributes, no need to use the ".":
 }
 ```
 
+.content styling (className for home div)
 this means, 40px margin top & bottom.
 auto margin left & right - centralization
