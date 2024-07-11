@@ -75,6 +75,7 @@ auto margin left & right - centralization
 ## Inline Styling
 
 outer pair: telling React this is a Dynamic block
+
 inner pair: property:value pairs for an object
 
 ```
