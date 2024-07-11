@@ -57,3 +57,16 @@ however, for built-in attributes, no need to use the ".":
   padding: 6px;
 }
 ```
+
+### Tips on styling
+
+```
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+```
+
+this means, 40px margin top & bottom.
+auto margin left & right - centralization
