@@ -71,3 +71,26 @@ however, for built-in attributes, no need to use the ".":
 .content styling (className for home div)
 this means, 40px margin top & bottom.
 auto margin left & right - centralization
+
+## Inline Styling
+
+outer pair: telling React this is a Dynamic block
+inner pair: property:value pairs for an object
+
+```
+ <div className="links">
+        <a href="/">Home</a>
+        <a
+          href="/create"
+          style={{
+            color: "white",
+            backgroundColor: "#f1356d",
+            borderRadius: "8px",
+          }}
+        >
+          New Blog
+        </a>
+      </div>
+```
+
+\*in Jsx(javascript), we use camelCase instead of -.
