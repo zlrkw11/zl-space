@@ -23,3 +23,27 @@ renders the <App/>, so apply index.css here.
 ```
 
 applies to everything
+
+### Referring to the class name when styling
+
+when the navbar links are named in className field:
+
+```
+<nav className="navbar">
+      <h1>ZL blog</h1>
+      <div className="links">
+        <a href="/">Home</a>
+        <a href="/create">New Blog</a>
+      </div>
+    </nav>
+```
+
+always make sure to do
+
+```
+.navbar .links {
+  margin-left: auto;
+}
+```
+
+so, the links (name we made) can be targeted
