@@ -47,3 +47,13 @@ always make sure to do
 ```
 
 so, the links (name we made) can be targeted
+
+however, for built-in attributes, no need to use the ".":
+
+```
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+```
