@@ -43,3 +43,12 @@ using curly braces to include javascript and then return some jsx.
 
 also, always include the **key** prop when mapping. Must be unique for each item,
 so using id attribute is ideal.
+
+then, we can extract elements / values from each blog object for display:
+
+```
+ <div className="blog-preview" key={blog.id}>
+        <h2>{blog.title}</h2>
+        <p>Written by {blog.author}</p>
+  </div>
+```
