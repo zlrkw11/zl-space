@@ -40,3 +40,6 @@ using curly braces to include javascript and then return some jsx.
       ))}
     </div>
 ```
+
+also, always include the **key** prop when mapping. Must be unique for each item,
+so using id attribute is ideal.
