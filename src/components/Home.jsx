@@ -1,10 +1,10 @@
 const Home = () => {
-  const handleClick = () => {
-    console.log("Hello World");
+  const handleClick = (e) => {
+    console.log("Hello World", e);
   };
 
   const handleClickAgain = (name) => {
-    console.log("hello" + name);
+    console.log("hello " + name);
   };
 
   return (

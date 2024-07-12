@@ -132,3 +132,13 @@ so, using the same concept:
 ```
 
 we passing in the function inside the arrow function.
+
+### Event Object
+
+the onClick event will automatically pass in an event object as the first parameter when an event happens.
+
+```
+  const handleClick = (e) => {
+    console.log("Hello World", e);
+  };
+```
