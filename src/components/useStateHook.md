@@ -18,3 +18,25 @@ the value passed in can be any type.
 ### useState Hook Practice
 
 must be called in a component
+
+```
+const [blogs, setBlogs] = useState([
+    { title: "blog 1", body: "texts", author: "zl", id: 1 },
+    { title: "blog 2", body: "texts", author: "zl", id: 2 },
+    { title: "blog 3", body: "texts", author: "zl", id: 3 },
+  ]);
+```
+
+### Map the list of items
+
+using curly braces to include javascript and then return some jsx.
+
+```
+ <div className="home">
+      {blogs.map((blog) => (
+        <div key={blog.id}>
+          <div className="blog-preview" key={blog.id}></div>
+        </div>
+      ))}
+    </div>
+```
