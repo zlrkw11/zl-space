@@ -152,4 +152,6 @@ const [name, setName] = useState("Ray");
   };
 ```
 
-using the second object (function) to set the first value to the new one passed in.
+using the second function to set the first value to the new one passed in.
+
+the value passed in can be any type.
