@@ -145,6 +145,8 @@ the onClick event will automatically pass in an event object as the first parame
 
 ## useState
 
+whenever we need to change a value and re-render the new value.
+
 ```
 const [name, setName] = useState("Ray");
   const handleClick = () => {
