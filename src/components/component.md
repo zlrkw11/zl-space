@@ -103,3 +103,32 @@ pass reference, not the invoked version. Otherwise it will be called straight aw
 ```
 {handleClick}
 ```
+
+### Passing in arguments
+
+if we have a function that requires an argument to be passed in:
+
+```
+ const handleClickAgain = (name) => {
+    console.log("hello" + name);
+  };
+
+```
+
+```
+onClick={() => {
+          console.log("hello");
+        }}
+```
+
+an arrow function like this won't invoke the function right away, but as a reference still.
+
+so, using the same concept:
+
+```
+  onClick={() => {
+          handleClickAgain("Ray");
+        }}
+```
+
+we passing in the function inside the arrow function.
