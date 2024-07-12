@@ -6,7 +6,17 @@ const Home = () => {
     { title: "blog 2", body: "texts", author: "zl", id: 2 },
     { title: "blog 3", body: "texts", author: "zl", id: 3 },
   ]);
-  return <div className="home"></div>;
+  return (
+    <div className="home">
+      {blogs.map((blog) => (
+        <div key={blog.id}>
+          {blog.title}
+          {blog.body}
+          {blog.author}
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Home;
