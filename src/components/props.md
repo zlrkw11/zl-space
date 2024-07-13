@@ -9,3 +9,11 @@ in this example, we need the blogs data when the component is saved somewhere el
 2. pass the data into the blogList component as props
 
 ## The props passing approach
+
+```
+  return (
+    <div className="home">
+      <BlogList blogs={blogs} />
+    </div>
+  );
+```

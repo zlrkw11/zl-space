@@ -1,4 +1,5 @@
-const BlogList = () => {
+const BlogList = (props) => {
+  const blogs = props.blogs;
   return (
     <div className="home">
       {blogs.map((blog) => (
