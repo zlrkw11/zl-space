@@ -14,3 +14,5 @@ the condition
 ```
 
 In this case, only the blogs with author = 'zl' will be returned for this blogList component
+
+so, says that we can do variations for the same component
