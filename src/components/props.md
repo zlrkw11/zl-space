@@ -10,7 +10,7 @@ in this example, we need the blogs data when the component is saved somewhere el
 
 ## The props passing approach
 
-when pulling a jsx component, pass in the prop
+when pulling a jsx component, pass in the props with the name we want to use (anything)
 
 ```
   return (
@@ -38,4 +38,10 @@ const BlogList = (props) => {
     </div>
   );
 };
+```
+
+### Can pass more than 1 values
+
+```
+<BlogList blogs={blogs} title="All Blogs" />
 ```
