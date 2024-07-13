@@ -6,10 +6,9 @@ By using the filter() method, it returns the item in the list if the item return
 the condition
 
 ```
-<BlogList
-        blogs={
-          (blogs.filter((blog) => blog.author === "zl"), (title = "zl's blogs"))
-        }
+   <BlogList
+        blogs={blogs.filter((blog) => blog.author === "zl")}
+        title="zl's blogs"
       />
 ```
 
