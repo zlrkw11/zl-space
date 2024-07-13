@@ -45,3 +45,11 @@ const BlogList = (props) => {
 ```
 <BlogList blogs={blogs} title="All Blogs" />
 ```
+
+## Destructure
+
+Instead of taking out the prop value one by one, we can destructure the props as a whole:
+
+```
+const BlogList = ({ blogs, title }) =>
+```
