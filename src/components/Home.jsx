@@ -8,7 +8,9 @@ const Home = () => {
     { title: "blog 3", body: "texts", author: "not-zl", id: 3 },
   ]);
 
-  const handleDelete = (id) => {};
+  const handleDelete = (id) => {
+    setBlogs(blogs.filter((blog) => blog.id !== id));
+  };
 
   useEffect(() => {
     console.log("use effect ran");
