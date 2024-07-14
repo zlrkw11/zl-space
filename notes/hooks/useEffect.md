@@ -12,7 +12,7 @@ in this example, if we change the state for blogs (delete), the useEffect will r
   });
 ```
 
-![useEffect](image.png)
+![useEffect](../screenshots/useEffect.png)
 
 sometimes the useEffect function might trigger state changes, causing infinite loops inside the function.
 
@@ -49,6 +49,6 @@ in order to make the useEffect only applies to this state hook, we pass in the s
   }, [name]);
 ```
 
-![specified useEffect hook](image-1.png)
+![specified useEffect hook](../screenshots/useEffect_specify.png)
 
 now, only the name state hook can trigger our useEffect function.
