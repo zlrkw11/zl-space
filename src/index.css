@@ -36,9 +36,11 @@
 }
 
 .blog-preview {
+  display: flex;
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
+  align-items: center;
 }
 
 .blog-preview:hover {
@@ -49,4 +51,16 @@
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
+}
+
+.delete-button {
+  border-radius: 8px;
+  border: none;
+  margin-left: auto;
+  height: 40px;
+}
+
+.delete-button:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }

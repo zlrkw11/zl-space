@@ -7,10 +7,17 @@ const BlogList = ({ blogs, title, handleDelete }) => {
       {blogs.map((blog) => (
         <div key={blog.id}>
           <div className="blog-preview" key={blog.id}>
-            <h2>{blog.title}</h2>
-            <p>Written by {blog.author}</p>
+            <div>
+              <h2>{blog.title}</h2>
+              <p>Written by {blog.author}</p>
+            </div>
+            <button
+              className="delete-button"
+              onClick={() => handleDelete(blog.id)}
+            >
+              Delete Blog
+            </button>
           </div>
-          <button onClick={() => handleDelete(blog.id)}>Delete Blog</button>
         </div>
       ))}
     </div>
