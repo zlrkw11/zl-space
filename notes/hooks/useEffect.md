@@ -32,3 +32,23 @@ an array to pass into the useEffect hook as the second argument.
 ```
 
 this means, the useEffect hook only runs the function after the **initial** render. (once)
+
+### To run the function for a specified state
+
+we have this example name changer state hook:
+
+```
+  const [name, setName] = useState("rukawa");
+```
+
+in order to make the useEffect only applies to this state hook, we pass in the state variable into the dependency list as the argument.
+
+```
+  useEffect(() => {
+    console.log(name);
+  }, [name]);
+```
+
+![specified useEffect hook](image-1.png)
+
+now, only the name state hook can trigger our useEffect function.
