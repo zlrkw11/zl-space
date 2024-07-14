@@ -8,13 +8,15 @@ const Home = () => {
     { title: "blog 3", body: "texts", author: "not-zl", id: 3 },
   ]);
 
+  const handleDelete = (id) => {};
+
   useEffect(() => {
     console.log("use effect ran");
   });
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All Blogs" />
+      <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
       <BlogList
         blogs={blogs.filter((blog) => blog.author === "zl")}
         title="zl's blogs"
