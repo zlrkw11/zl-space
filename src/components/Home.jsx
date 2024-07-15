@@ -11,10 +11,15 @@ const Home = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8000/blogs").then((res) => {
-      return res.json();
-    });
-  }, [name]);
+    fetch("http://localhost:8000/blogs")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        // javascript array
+        console.log(data);
+      });
+  }, []);
 
   return (
     <div className="home">
