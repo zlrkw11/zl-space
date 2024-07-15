@@ -18,6 +18,7 @@ const Home = () => {
       .then((data) => {
         // javascript array
         console.log(data);
+        setBlogs(data);
       });
   }, []);
 
