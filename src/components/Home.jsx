@@ -24,7 +24,9 @@ const Home = () => {
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
+      {blogs && (
+        <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
+      )}
       <button onClick={() => setName("kaede")}>change name</button>
       <p>{name}</p>
     </div>
