@@ -11,7 +11,9 @@ const Home = () => {
   };
 
   useEffect(() => {
-    console.log(name);
+    fetch("http://localhost:8000/blogs").then((res) => {
+      return res.json();
+    });
   }, [name]);
 
   return (
