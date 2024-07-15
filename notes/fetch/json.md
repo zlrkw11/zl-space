@@ -14,7 +14,7 @@ however, we are not using browsers to get that data, instead, we use fetch reque
 
 ### Endpoints
 
-\*not all, just the ones we are using
+\*not all, just the ones we are using in this project
 
 1. /blogs GET fetch all blogs
 2. /blogs/{id} GET fetch a single blog
