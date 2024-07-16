@@ -20,3 +20,5 @@ useEffect(() => {
 ```
 
 .then() function runs a function right after the fetch action. In this case, we return the .json() object of the response object. Followed by another .then() to set our blogs value to this json object (which is an array).
+
+## Loading

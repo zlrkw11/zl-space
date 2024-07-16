@@ -4,7 +4,6 @@ import BlogList from "./BlogList";
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
   const [isPending, setIsPending] = useState(true);
-  const [name, setName] = useState("rukawa");
 
   useEffect(() => {
     fetch("http://localhost:8000/blogs")
