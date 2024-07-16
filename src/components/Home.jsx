@@ -27,8 +27,6 @@ const Home = () => {
         </div>
       )}
       {blogs && <BlogList blogs={blogs} title="All Blogs" />}
-      <button onClick={() => setName("kaede")}>change name</button>
-      <p>{name}</p>
     </div>
   );
 };
