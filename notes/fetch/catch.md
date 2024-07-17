@@ -8,4 +8,4 @@
 
 ```
 
-however
+however if we have request denied, endpoints not existing... The same method won't be valid anymore, so, we need to check that response object has the **right state** because there will still be the same object sent back.
