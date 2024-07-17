@@ -38,3 +38,5 @@ however if we have request denied, endpoints not existing... The same method won
    ```
 
    and we can display this err variable (state) on screen
+
+lastly, don't remember to set the err message to "null" once the data is confirmed being valid.
