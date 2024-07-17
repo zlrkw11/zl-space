@@ -4,6 +4,7 @@ import BlogList from "./BlogList";
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
   const [isPending, setIsPending] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:8000/blogs")
@@ -18,14 +19,16 @@ const Home = () => {
         console.log(data);
         setBlogs(data);
         setIsPending(false);
+        setError(null);
       })
       .catch((err) => {
-        console.log(err.message);
+        setError(err.message);
       });
   }, []);
 
   return (
     <div className="home">
+      {<p>{error}</p>}
       {isPending && (
         <div>
           <p>Loading...</p>
