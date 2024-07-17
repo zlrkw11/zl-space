@@ -22,3 +22,19 @@ however if we have request denied, endpoints not existing... The same method won
    so we check by checking manually and make up our own error msg.
 
    the console.log at the end with the catch will catch this error and display the msg after we threw it.
+
+3. make the states
+
+   ```
+   const [error, setError] = useState(null);
+   ```
+
+   then we can set the err message
+
+   ```
+   .catch((err) => {
+        setError(err.message);
+      });
+   ```
+
+   and we can display this err variable (state) on screen
