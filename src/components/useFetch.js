@@ -1,4 +1,9 @@
+import { useState, useEffect } from "react";
+
 const useFetch = () => {
+  const [data, setData] = useState(null);
+  const [isPending, setIsPending] = useState(true);
+  const [error, setError] = useState(null);
   useEffect(() => {
     fetch("http://localhost:8000/blogs")
       .then((res) => {
@@ -10,7 +15,7 @@ const useFetch = () => {
       .then((data) => {
         // javascript array
         console.log(data);
-        setBlogs(data);
+        setData(data);
         setIsPending(false);
         setError(null);
       })
@@ -18,4 +23,8 @@ const useFetch = () => {
         setError(err.message);
       });
   }, []);
+
+  return { data, isPending, error };
 };
+
+export default useFetch;
