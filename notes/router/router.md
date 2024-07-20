@@ -43,7 +43,7 @@ now, surrounds app component with router component. So, we can use the router in
 
 ### Routes (Switch) component
 
-only 1 component is rendered each time depending on the router
+The <Routes> component ensures that only one of the routes is rendered at a time, based on the current URL path.
 
 ```
 function App() {
