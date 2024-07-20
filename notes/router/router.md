@@ -28,3 +28,11 @@ npm install react-router-dom
 ```
 
 the dom specifically works for web applications
+
+under our main file: App.jsx
+
+```
+import { BrowserRouter as Router } from "react-router-dom";
+```
+
+using the BrowserRouter with the name - Router
