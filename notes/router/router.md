@@ -31,8 +31,37 @@ the dom specifically works for web applications
 
 under our main file: App.jsx
 
+import the resources
+
 ```
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 ```
 
 using the BrowserRouter with the name - Router
+
+now, surrounds app component with router component. So, we can use the router in the application because all components are arranged in App.jsx.
+
+### Switch component
+
+only 1 component is rendered each time depending on the router
+
+```
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
+  );
+}
+```
+
+This means we want to show the <Home/> component only when the path "/" is visited.
