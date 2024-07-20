@@ -16,3 +16,15 @@ react then injects the components dynmaically
 
 when a new link is clicked,
 react will step in and inject the contents into that page rather than sending a new request.
+
+less requests, faster
+
+### Implementation
+
+```
+npm install react-router
+or
+npm install react-router-dom
+```
+
+the dom specifically works for web applications
