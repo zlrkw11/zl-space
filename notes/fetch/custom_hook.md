@@ -16,3 +16,7 @@ return { data, isPending, error };
 accept props like url to make sure it conditionally directs to the link and add it to the dependency list
 
 ### Destructuring will not be order-inflenced if object format is used
+
+## Error while updating (switching between routes)
+
+console will give error when there is switching between Home.jsx and NewBlog.jsx pages as the useState hook is trying to update the home component but the page has been changed.
