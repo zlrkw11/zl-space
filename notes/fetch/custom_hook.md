@@ -20,3 +20,7 @@ accept props like url to make sure it conditionally directs to the link and add 
 ## Error while updating (switching between routes)
 
 console will give error when there is switching between Home.jsx and NewBlog.jsx pages as the useState hook is trying to update the home component but the page has been changed.
+
+fetch is still going on in the background, tries to update the states in home. But home is not there in the dom anymore.
+
+we wanna stop that fetch by using a cleanup function & abort controller.
