@@ -62,4 +62,10 @@ function App() {
 }
 ```
 
+For every page route
+
+```
+<Route path="/" element={<Home />} />
+```
+
 This means we want to show the <Home/> component only when the path "/" is visited.
