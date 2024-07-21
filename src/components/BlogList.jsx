@@ -13,8 +13,8 @@ const BlogList = ({ blogs, title }) => {
                 <h2>{blog.title}</h2>
                 <p>Written by {blog.author}</p>
               </div>
-              <button className="delete-button">Delete Blog</button>
             </Link>
+            <button className="delete-button">Delete Blog</button>
           </div>
         </div>
       ))}

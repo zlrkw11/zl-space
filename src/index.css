@@ -66,3 +66,7 @@
   color: white;
   background-color: #333;
 }
+
+.blog-preview a {
+  text-decoration: none;
+}
