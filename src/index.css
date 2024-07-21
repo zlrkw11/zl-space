@@ -70,3 +70,12 @@
 .blog-preview a {
   text-decoration: none;
 }
+
+.blog-details div {
+  margin: 20px 0;
+}
+
+.blog-details h2 {
+  color: #f1356d;
+  margin-bottom: 10px;
+}
