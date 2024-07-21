@@ -1,4 +1,4 @@
-import BlogDetails from "./BlogDetails";
+import BlogDetails from "./components/BlogDetails";
 import Navbar from "./components/Navbar";
 import Home from "./Home";
 import Create from "./Create";
