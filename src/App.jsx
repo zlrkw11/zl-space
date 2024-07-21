@@ -1,3 +1,4 @@
+import BlogDetails from "./BlogDetails";
 import Navbar from "./components/Navbar";
 import Home from "./Home";
 import NewBlog from "./NewBlog";
@@ -12,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<NewBlog />} />
+            <Route path="/blogs/:id" element={<BlogDetails />} />
           </Routes>
         </div>
       </div>
