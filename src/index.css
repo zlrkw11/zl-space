@@ -101,3 +101,12 @@ select {
   box-sizing: border-box;
   display: block;
 }
+
+.create button {
+  background-color: #f1356d;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+}
