@@ -8,7 +8,7 @@ const Create = () => {
       <h2>Add Blog</h2>
       <form>
         <label>Blog Title:</label>
-        <input type="text" required />
+        <input type="text" required value={title} />
 
         <label>Blog Body:</label>
         <textarea required></textarea>
