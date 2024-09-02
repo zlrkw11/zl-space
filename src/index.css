@@ -79,3 +79,9 @@
   color: #f1356d;
   margin-bottom: 10px;
 }
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
