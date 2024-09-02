@@ -8,7 +8,12 @@ const Create = () => {
       <h2>Add Blog</h2>
       <form>
         <label>Blog Title:</label>
-        <input type="text" required value={title} />
+        <input
+          type="text"
+          required
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
 
         <label>Blog Body:</label>
         <textarea required></textarea>
